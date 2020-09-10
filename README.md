@@ -11,5 +11,5 @@ Requires MelonLoader
 Video gameplay: https://www.youtube.com/watch?v=ZvRi8AV02Ko
 
 ### Planned changes/features: 
--adjusting rotation point to be around the finger
--add user-customizable fields for spin speed/dampening, etc
+- adjusting rotation point to be around the finger
+- add user-customizable fields for spin speed/dampening, etc
