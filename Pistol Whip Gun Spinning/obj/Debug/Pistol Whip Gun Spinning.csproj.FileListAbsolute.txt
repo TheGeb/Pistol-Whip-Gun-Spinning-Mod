@@ -1,0 +1,138 @@
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\0Harmony.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Assembly-CSharp.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Iced.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Il2Cppmscorlib.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Il2CppSystem.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Il2CppSystem.Xml.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\MelonLoader.ModHandler.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\MelonLoader.Support.Il2Cpp.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Mono.Cecil.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Mono.Cecil.Mdb.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Mono.Cecil.Pdb.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Mono.Cecil.Rocks.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\SteamVR.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\SteamVR_Actions.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnhollowerBaseLib.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnhollowerRuntimeLib.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.CoreModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.InputLegacyModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.InputModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.VRModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.XRModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.AnimationModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.Entities.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.UI.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.ParticleSystemModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Sirenix.Serialization.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.Timeline.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\SonicBloom.Koreo.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.AudioModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.PhysicsModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.Transforms.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.Entities.Hybrid.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Sirenix.OdinInspector.Attributes.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.AIModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Il2CppSystem.Core.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.RemoteConfig.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.TextMeshPro.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.Postprocessing.Runtime.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.Mathematics.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.Collections.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.UIModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.TerrainModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\NavMeshComponents.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.SpatialTracking.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.Physics2DModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\MeshBakerCore.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.RenderPipelines.Lightweight.Runtime.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.IMGUIModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Il2CppMono.Security.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Il2CppSystem.Configuration.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.TextRenderingModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.VehiclesModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.SharedInternalsModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.Mathematics.Extensions.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Sirenix.Serialization.Config.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.DirectorModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\UnityEngine.TextCoreModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Unity.RenderPipelines.Core.Runtime.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Sirenix.Utilities.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\obj\Debug\Pistol Whip Gun Spinning.csproj.CoreCompileInputs.cache
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\obj\Debug\Pistol Whip Gun Spinning.csproj.CopyComplete
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Pistol Whip Gun Spinning.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\bin\Debug\Pistol Whip Gun Spinning.pdb
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\obj\Debug\Pistol Whip Gun Spinning.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\obj\Debug\Pistol Whip Gun Spinning.pdb
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Mods\obj\Debug\Pistol Whip Gun Spinning.csprojAssemblyReference.cache
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Pistol Whip Gun Spinning.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Pistol Whip Gun Spinning.pdb
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\0Harmony.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Assembly-CSharp.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Iced.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Il2Cppmscorlib.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Il2CppSystem.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Il2CppSystem.Xml.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\MelonLoader.ModHandler.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\MelonLoader.Support.Il2Cpp.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Mono.Cecil.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Mono.Cecil.Mdb.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Mono.Cecil.Pdb.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Mono.Cecil.Rocks.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\SteamVR.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\SteamVR_Actions.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnhollowerBaseLib.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnhollowerRuntimeLib.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.CoreModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.InputLegacyModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.InputModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.PhysicsModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.VRModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.XRModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.AnimationModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.Entities.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.UI.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.ParticleSystemModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Sirenix.Serialization.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.Timeline.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\SonicBloom.Koreo.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.AudioModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.Transforms.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.Entities.Hybrid.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Sirenix.OdinInspector.Attributes.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.AIModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Il2CppSystem.Core.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.RemoteConfig.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.TextMeshPro.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.Postprocessing.Runtime.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.Mathematics.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.Collections.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.UIModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.TerrainModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\NavMeshComponents.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.SpatialTracking.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.Physics2DModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\MeshBakerCore.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.RenderPipelines.Lightweight.Runtime.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.IMGUIModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Il2CppMono.Security.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Il2CppSystem.Configuration.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.TextRenderingModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.VehiclesModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.SharedInternalsModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.Mathematics.Extensions.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Sirenix.Serialization.Config.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.DirectorModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\UnityEngine.TextCoreModule.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Unity.RenderPipelines.Core.Runtime.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\bin\Debug\Sirenix.Utilities.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\obj\Debug\Pistol Whip Gun Spinning.csprojAssemblyReference.cache
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\obj\Debug\Pistol Whip Gun Spinning.csproj.CoreCompileInputs.cache
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\obj\Debug\Pistol Whip Gun Spinning.csproj.CopyComplete
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\obj\Debug\Pistol Whip Gun Spinning.dll
+G:\Users\Gabe\Desktop\pistol-whip-gun-mods-master\Pistol Whip Gun Spinning\obj\Debug\Pistol Whip Gun Spinning.pdb
