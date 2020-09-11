@@ -18,12 +18,13 @@ namespace Pistol_Whip_Gun_Spinning
     returnAngle.eulerAngles.ToString();
     */
 
-    public class GunSpinning: MelonMod
+    public class GunSpinning : MelonMod
     {
-        
+
         static Hand[] hands;
         static bool started = false;
         static bool updateOffsets = false;
+        static bool steamVR = true;
 
         [HarmonyPatch(typeof(UIStateController), "OnPressPauseButtonOnController", new System.Type[] { })]
         public static class SongPause
@@ -43,7 +44,7 @@ namespace Pistol_Whip_Gun_Spinning
         {
             private static void Prefix()
             {
-                for (int i=0; i<2; i++)
+                for (int i = 0; i < 2; i++)
                 {
                     hands[i].transform.localRotation = hands[i].returnAngle;
                     hands[i].state = State.Stopped;
@@ -59,13 +60,13 @@ namespace Pistol_Whip_Gun_Spinning
                 updateOffsets = true;
             }
         }
-                    
 
-    [HarmonyPatch(typeof(ControllerOffsetMonitor), "Update", new System.Type[] { })]    //Grabs controllers when they become available
-    public static class UpdateOffsets
-    {
-        public static void Postfix()
+
+        [HarmonyPatch(typeof(ControllerOffsetMonitor), "Update", new System.Type[] { })]    //Grabs controllers when they become available
+        public static class UpdateOffsets
         {
+            public static void Postfix()
+            {
                 if (updateOffsets)
                 {
                     hands[0].returnAngle = hands[0].com.rotationalOffset * hands[1].com.userRotationalOffset;   //MESSY FIX: Left seems to update first, so we get userRotationalOffset off of that one on update
@@ -79,10 +80,10 @@ namespace Pistol_Whip_Gun_Spinning
 
                 }
             }
-    }
+        }
 
 
-    [HarmonyPatch(typeof(CHKinematicVelocityEstimator), "Awake", new System.Type[] { })]    //Grabs controllers when they become available
+        [HarmonyPatch(typeof(CHKinematicVelocityEstimator), "Awake", new System.Type[] { })]    //Grabs controllers when they become available
         public static class Init
         {
             public static void Postfix()
@@ -90,24 +91,51 @@ namespace Pistol_Whip_Gun_Spinning
                 started = true;
                 hands = new Hand[2];
 
-                //Right Hand setup
-                hands[0] = new Hand();
-                hands[0].hand = GameObject.Find("/UnityXR_VRCameraRig(Clone)/TrackingSpace/Right Hand").gameObject;
-                hands[0].activator = Activator.RightA;
-                hands[0].transform = hands[0].hand.transform.Find("Pointer").transform;
-                hands[0].vTracker = hands[0].hand.GetComponent(Il2CppType.Of<CHKinematicVelocityEstimator>()).TryCast<CHKinematicVelocityEstimator>();
-                hands[0].com = hands[0].transform.gameObject.GetComponent(Il2CppType.Of<ControllerOffsetMonitor>()).TryCast<ControllerOffsetMonitor>();
+                if (GameObject.Find("RightHandAnchor") != null)   //Oculus Setup
+                {
+                    //Right Hand setup
+                    hands[0] = new Hand();
+                    hands[0].hand = GameObject.Find("RightHandAnchor");
+                    //MelonLogger.Log("Right Hand Ready!");
+                    hands[0].activator = Activator.RightGrip;   //TODO: Test this for oculus
+                    hands[0].transform = GameObject.Find("RightControllerAnchor").transform.Find("Pointer").transform;
+                    hands[0].vTracker = hands[0].hand.GetComponent(Il2CppType.Of<CHKinematicVelocityEstimator>()).TryCast<CHKinematicVelocityEstimator>();
+                    hands[0].com = hands[0].transform.gameObject.GetComponent(Il2CppType.Of<ControllerOffsetMonitor>()).TryCast<ControllerOffsetMonitor>();
 
-                //Left Hand setup
-                hands[1] = new Hand();
-                hands[1].hand = GameObject.Find("/UnityXR_VRCameraRig(Clone)/TrackingSpace/Left Hand").gameObject;
-                hands[1].activator = Activator.LeftA;
-                hands[1].transform = hands[1].hand.transform.Find("Pointer").transform;
-                hands[1].vTracker = hands[1].hand.GetComponent(Il2CppType.Of<CHKinematicVelocityEstimator>()).TryCast<CHKinematicVelocityEstimator>();
-                hands[1].com = hands[1].transform.gameObject.GetComponent(Il2CppType.Of<ControllerOffsetMonitor>()).TryCast<ControllerOffsetMonitor>();
+                    //Left Hand Setup
+                    hands[1] = new Hand();
+                    hands[1].hand = GameObject.Find("LeftHandAnchor");
+                    //MelonLogger.Log("Left Hand Ready!");
+                    hands[1].activator = Activator.LeftGrip;   //TODO: Test this for oculus
+                    hands[1].transform = GameObject.Find("LeftControllerAnchor").transform.Find("Pointer").transform;
+                    hands[1].vTracker = hands[1].hand.GetComponent(Il2CppType.Of<CHKinematicVelocityEstimator>()).TryCast<CHKinematicVelocityEstimator>();
+                    hands[1].com = hands[1].transform.gameObject.GetComponent(Il2CppType.Of<ControllerOffsetMonitor>()).TryCast<ControllerOffsetMonitor>();
+                }
+                else //SteamVR Setup
+                {
+                    //Right Hand setup
+                    hands[0] = new Hand();
+                    hands[0].hand = GameObject.Find("Right Hand");
+                    //MelonLogger.Log("Right Hand Ready!");
+                    hands[0].activator = Activator.RightGrip;
+                    hands[0].transform = hands[0].hand.transform.Find("Pointer").transform;
+                    hands[0].vTracker = hands[0].hand.GetComponent(Il2CppType.Of<CHKinematicVelocityEstimator>()).TryCast<CHKinematicVelocityEstimator>();
+                    hands[0].com = hands[0].transform.gameObject.GetComponent(Il2CppType.Of<ControllerOffsetMonitor>()).TryCast<ControllerOffsetMonitor>();
 
+                    //Left Hand setup
+                    hands[1] = new Hand();
+                    hands[1].hand = GameObject.Find("Left Hand");
+                    //MelonLogger.Log("Left Hand Ready!");
+                    hands[1].activator = Activator.LeftGrip;
+                    hands[1].transform = hands[1].hand.transform.Find("Pointer").transform;
+                    hands[1].vTracker = hands[1].hand.GetComponent(Il2CppType.Of<CHKinematicVelocityEstimator>()).TryCast<CHKinematicVelocityEstimator>();
+                    hands[1].com = hands[1].transform.gameObject.GetComponent(Il2CppType.Of<ControllerOffsetMonitor>()).TryCast<ControllerOffsetMonitor>();
+                }
             }
         }
+
+        //required for compatibility with ricochet mod
+        public static bool hasReset = true;
 
         [HarmonyPatch(typeof(Gun), "Fire", new System.Type[] { })]
         public static class Fire
@@ -116,30 +144,36 @@ namespace Pistol_Whip_Gun_Spinning
 
             public static void Prefix()
             {
-                //return false; //this will skip actually firing (For starting spin? Check if there is a valid autoaim target)
-
-                //make sure to check hand side in final version
-
-                for (int i = 0; i < 2; i++)
+                if (hasReset)
                 {
-                    if (hands[i].state == State.Spinning) //if we fire while spinning, shoot where you're actually pointing
+                    for (int i = 0; i < 2; i++)
                     {
-                        localRotations[i] = hands[i].transform.localRotation;
-                        hands[i].transform.localRotation = hands[i].returnAngle;
+                        if (hands[i].state == State.Spinning) //if we fire while spinning, shoot where you're actually pointing
+                        {
+                            localRotations[i] = hands[i].transform.localRotation;
+                            hands[i].transform.localRotation = hands[i].returnAngle;
+                        }
                     }
+                    hasReset = false; //skips the first spin prefix when a ricochet occurs so localrotations don't get overwritten
                 }
             }
-            //gun fires if valid, then goes to postfix
 
             public static void Postfix()
             {
+
                 for (int i = 0; i < 2; i++)
                 {
+                    //MelonLogger.Log(Quaternion.Angle(hands[i].transform.localRotation, hands[i].returnAngle).ToString());
                     if (hands[i].state == State.Spinning) //if we fire while spinning, bring it to an end
                     {
                         hands[i].transform.localRotation = localRotations[i];
                         hands[i].totalTime = hands[i].totalTime * 0.8f;   //Shooting the gun counteracts decay a bit for longer spins and more fun :P
                     }
+                }
+
+                if (!hasReset)
+                {
+                    hasReset = true; //allows the second spin prefix when a ricochet occurs
                 }
             }
         }
@@ -152,7 +186,7 @@ namespace Pistol_Whip_Gun_Spinning
             {
                 for (int i = 0; i < 2; i++)
                 {
-                    
+
                     bool pushed = hands[i].getInput((int)hands[i].activator) == 0f; //wacky, but this is how CH makes me do it
 
                     if (hands[i].state != State.Spinning && pushed)
@@ -182,4 +216,3 @@ namespace Pistol_Whip_Gun_Spinning
         }
     }
 }
- 
