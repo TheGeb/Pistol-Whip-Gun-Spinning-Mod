@@ -32,11 +32,18 @@ namespace Pistol_Whip_Gun_Spinning
         public Activator activator;
 
         //settings
-        public const float speedMultiplier = 175; //change this if you want the gun to spin easier
-        public const float speedDecay = 0.25f; //This is the percent of speed lost per second as a decimal
-        public const float maxSpeed = 7.5f; //determines max rotation speed - Doesn't really have units as far as I know
+        /*
+        public float sensitivity = 150f; //make this number higher if you want the gun to spin easier.
+        public float speedDecay = 0.25f; //This is the percent of speed lost per second as a decimal
+        public float maxSpeed = 1500; //determines max rotation speed in Degrees per second
+        */
+        public float sensitivity = MelonPrefs.GetFloat("Pistol_Whip_Gun_Spinning", "sensitivity"); //make this number higher if you want the gun to spin easier.
+        public float speedDecay = MelonPrefs.GetFloat("Pistol_Whip_Gun_Spinning", "speedDecay"); //This is the percent of speed lost per second as a decimal
+        public float maxSpeed = MelonPrefs.GetFloat("Pistol_Whip_Gun_Spinning", "maxSpeed"); //determines max rotation speed in Degrees per second
 
         //angle stuff
+        public Vector3 returnPos;
+        public Vector3 endPos;
         public Quaternion returnAngle; //starting gun angle with no spin
         public Quaternion endAngle;
 
@@ -59,21 +66,26 @@ namespace Pistol_Whip_Gun_Spinning
         public void Spin()
         {
             //Update controller's angular velocity
-            trackedSpeed = Vector3.Dot(vTracker.GetAngularVelocityEstimate(), -1 * hand.transform.right);
+            trackedSpeed = sensitivity * Vector3.Dot(vTracker.GetAngularVelocityEstimate(), -1 * hand.transform.right); //not sure what unit angular velocity is given in here.
 
-            if (trackedSpeed * trackedSpeed > maxSpeed*maxSpeed)  //lazy absolute value for comparison
+            if (trackedSpeed * trackedSpeed > maxSpeed*maxSpeed)  //lazy absolute value check for magnitude comparison
             {
                trackedSpeed = (trackedSpeed > maxSpeed ? maxSpeed : -maxSpeed); //handles positive/negative spin
             }
 
-            if (trackedSpeed * trackedSpeed > currentSpinSpeed * currentSpinSpeed)
+            if (trackedSpeed * trackedSpeed > currentSpinSpeed * currentSpinSpeed) //if we are rotating faster than the current rotation, move at the new speed
             {
                 currentSpinSpeed = trackedSpeed;
                 startingSpeed = currentSpinSpeed;
                 totalTime = 0;
             }
 
-            transform.localRotation *= Quaternion.AngleAxis(currentSpinSpeed * speedMultiplier * Time.deltaTime, Vector3.left);
+            //transform.localRotation *= Quaternion.AngleAxis(currentSpinSpeed * Time.deltaTime, Vector3.left);
+
+            transform.RotateAround( transform.TransformPoint(new Vector3(0,0.041f,0.061f)), transform.TransformDirection(Vector3.left), currentSpinSpeed * Time.deltaTime);
+                //Rotate around trigger LocalX? /UnityXR_VRCameraRig(Clone)/TrackingSpace/Right Hand/Pointer/Player Gun (Desert Eagle)(Clone)/Pivot/Recoil Pivot/deagle/deagle_trigger
+                //create gameobject at 0.41, 0.41, then rotate parent around gameobject X Axis
+
             totalTime += Time.deltaTime;
             currentSpinSpeed = (1 - speedDecay * totalTime)  * startingSpeed;
 
@@ -81,6 +93,13 @@ namespace Pistol_Whip_Gun_Spinning
             {
                 InitReturn();
             }
+        }
+
+        public void Recoil()
+        {
+            currentSpinSpeed += (currentSpinSpeed > 0 ? (maxSpeed - currentSpinSpeed) : (-maxSpeed - currentSpinSpeed)) * 0.25f;
+            startingSpeed = currentSpinSpeed;
+            totalTime = 0;
         }
 
         public float getInput(int id)
@@ -92,6 +111,7 @@ namespace Pistol_Whip_Gun_Spinning
         {
             state = State.Returning;
             endAngle = transform.localRotation;
+            endPos = transform.localPosition;
             currentSpinSpeed = 0; 
             totalTime = 0; //start the counter for rapid spin return
         }
@@ -104,14 +124,18 @@ namespace Pistol_Whip_Gun_Spinning
         public void Return()
         {
             totalTime += Time.deltaTime;
-            if (totalTime * 12f < 1f) //spins currently happen in 1/12 of a second, 1 represents perfectly restored angle
-            {   
+            if (totalTime * 12f < 1f) //return spins currently happen in 1/12 of a second, 1 represents perfectly restored angle
+            {
                 transform.transform.localRotation = Quaternion.Slerp(endAngle, returnAngle, totalTime * 12f); //TODO: Have this depend on spin direction?
+                transform.transform.localPosition = Vector3.Slerp(endPos, returnPos, totalTime * 12f);
+
+                //transform.RotateAround(transform.TransformPoint(new Vector3(0, 0.041f, 0.061f)), transform.TransformDirection(Vector3.left), currentSpinSpeed * totalTime);
             }
             else
             {
                 //Snap to natural position to avoid overshoot
                 transform.transform.localRotation = returnAngle;
+                transform.transform.localPosition = returnPos;
                 state = State.Stopped;
                 totalTime = 0;
             }
