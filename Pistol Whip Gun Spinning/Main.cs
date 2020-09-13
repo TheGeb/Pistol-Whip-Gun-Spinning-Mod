@@ -18,18 +18,6 @@ namespace Pistol_Whip_Gun_Spinning
         {
             base.OnApplicationStart();
 
-            /*
-             *  Create another method elsewhere called like RegisterPrefs() or whatever, and call that in OnApplicationStart()
-                In that method, register your category with ModPrefs.RegisterCategory("YourMod", "Your Mod Display Text");
-                Below that, register any values you want with ModPrefs.RegisterPrefTYPE (Type referring to something like int, string, etc..., so like RegisterPrefBool)
-                ex. ModPrefs.RegisterPrefString("YourMod", "TestString", "This is a test string");
-                or ModPrefs.RegisterPrefFloat("YourMod", "Pref1", -2.0f);
-                Registering it will basically load it, and if it doesn't exist already, it will create it
-                To get values, use ModPrefs.GetTYPE (Same situation, like GetFloat, GetBool, etc...)
-                ex. ModPrefs.GetFloat("YourMod", "Pref1")
-                Finally, to overwrite values, use ModPrefs.SetTYPE (blah blah blah same thing)
-            */
-
             MelonPrefs.RegisterCategory("Pistol_Whip_Gun_Spinning", "Gun Spinning Prefs");
             MelonPrefs.RegisterFloat("Pistol_Whip_Gun_Spinning", "sensitivity", 150f);
             MelonPrefs.RegisterFloat("Pistol_Whip_Gun_Spinning", "speedDecay", 0.25f);

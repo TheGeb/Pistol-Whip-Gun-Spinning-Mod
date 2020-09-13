@@ -97,7 +97,7 @@ namespace Pistol_Whip_Gun_Spinning
 
         public void Recoil()
         {
-            currentSpinSpeed += (currentSpinSpeed > 0 ? (maxSpeed - currentSpinSpeed) : (-maxSpeed - currentSpinSpeed)) * 0.25f;
+            currentSpinSpeed += (currentSpinSpeed > -270 ? (maxSpeed - currentSpinSpeed) : (-maxSpeed - currentSpinSpeed)) * 0.25f;
             startingSpeed = currentSpinSpeed;
             totalTime = 0;
         }
